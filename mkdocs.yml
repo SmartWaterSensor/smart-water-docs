@@ -1,0 +1,67 @@
+site_name: "SmartWater sensor"
+
+# repo_url: https://github.com/zawadzkim/pySWAP
+# repo_name: zawadzkim/pySWAP
+
+# watch:
+#   - ./pyswap
+
+# extra_css:
+#   - stylesheets/extra.css
+
+theme:
+  name: material
+  # logo: public/logo.webp
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: "Switch to Dark Mode"
+      primary: teal
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off
+        name: "Switch to Light Mode"
+      primary: teal
+      accent: lime
+plugins:
+  - search
+  - blog
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - toc:
+      permalink: true
+      separator: "_"
+      toc_depth: 2

@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "smart-water-docs"
+version = "0.1.0"
+description = ""
+authors = ["Mateusz <zawadzkimat@outlook.com>"]
+readme = "README.md"
+packages = [{include = "smart_water_docs"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mkdocs-material = "^9.5.27"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
